@@ -92,3 +92,7 @@ Refer to the [terraform folder](./terraform/) for complete Terraform configurati
 5. Rebase the repository and push it to your own github org.
 
 6. Run the [pipeline](./.github/workflows/release.yaml) and enjoy the results
+
+## Gotchas
+
+Note that the service principal used to configure the `azurerm` provider must have the [owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) role in order to assign the federated identity principal the `reader` scope in the `azurerm` provider subscription.
