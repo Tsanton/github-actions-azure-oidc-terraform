@@ -1,0 +1,7 @@
+.providercache/
+.devcontainer/
+.env
+*.terraform*
+*.tfvars*
+*.tfstate*
+.DS_Store
